@@ -28,7 +28,7 @@ public class SwitchExpressionExample {
 		case 3 -> "C";
 		default -> "F";
 		};
-		int day = 3;
+		System.out.println(result);
 //		String type;
 //		switch(day) {
 //		case 1:
@@ -44,11 +44,14 @@ public class SwitchExpressionExample {
 //			break;
 //		}
 		
+		int day = 3;
+		
 		String type = switch(day) {
 		case 1,2,3,4,5 -> "평일";
 		case 6,7 -> "주말";
 		default -> "잘못된 값";
 		};
+		System.out.println(type);
 		
 		//화살표 오른쪽에 여러 줄의 로직이 필요하다면 { }를 써야한다.
 		//이때 최종적으로 반환할 값을 명시하려면 yield 키워드를 사용한다.
@@ -85,18 +88,23 @@ public class SwitchExpressionExample {
 		//*
 		//10 * 7 + 70
 		
-		/*Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("첫번째 수 입력 : ");
-		int z = sc.nextInt();
-		Scanner s = new Scanner(System.in);
+		int su1 = sc.nextInt();
 		System.out.println("두번째 수 입력 : ");
+		int su2 = sc.nextInt();
+		System.out.println("연산기호 입력 : ");
+		String symbol = sc.next();
 		
-		String result2 = switch(op) {
+		String result2 = switch(symbol) {
 		case "+" -> su1 + "+" + su2 + "=" + (su1 + su2);
 		case "-" -> su1 + "-" + su2 + "=" + (su1 - su2);
-		case "*" -> su1 + "+" + su2 + "=" + (su1 + su2);
-		case "+" -> su1 + "+" + su2 + "=" + (su1 + su2);
-		}*/
+		case "*" -> su1 + "*" + su2 + "=" + (su1 * su2);
+		case "/" -> su1 + "/" + su2 + "=" + (su1 / su2);
+		default -> "기호를 입력하세요";
+		};
+		
+		System.out.println(result2);
 		
 		
 		

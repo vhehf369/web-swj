@@ -27,7 +27,7 @@ public class ForExample {
 		}
 		
 		int sum = 0;
-		for(int i = 1; i <= 10; i++); {
+		for(int i = 1; i <= 10; i++) {
 			sum += i; //sum = sum + 1
 		};
 		
@@ -42,7 +42,11 @@ public class ForExample {
 			}
 		}
 		//1부터 20까지 홀수만 출력하세요
-		
+		for(int i = 1; i <= 20; i++) {
+			if(i % 2 != 0) {
+				System.out.println(i + " ");
+			}
+		}
 		
 		//정수형 변수를 하나 초기화 한다.
 		//해당 정수에 해당하는 구구단 출력하기
@@ -65,10 +69,19 @@ public class ForExample {
 		
 		int total = 0;
 		for(int i = 1; i <= y; i++) {
-			total += y;
+			total += i;
 		}
+		System.out.println(total);
 		//10개의 정수를 입력받고 그 수들 중 짝수가 몇개인지 구하세요
 		int count = 0;
-		for
+		
+		for(int i = 0; i <= 9; i++) {
+			System.out.println(i + 1 + "번째 숫자 입력 : ");
+			int num = sc.nextInt();
+			if(num % 2 == 0) {
+				count++;
+			}
+		}
+		System.out.println("짝수 갯수 : " + count);
 	}
 }
