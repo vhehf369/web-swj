@@ -26,6 +26,11 @@ public static void main(String[] args) {
 	
 	//10 ~ 5000사이의 난수
 	int money = ((int)(Math.random()*500)+1)*10;// 1<= x < 501
+	//0.0 * 500 <= x * 500 < 1.0 * 500
+	//int에 의해 0 <= (int)(x * 500) <= 499
+	//1 <= (int)(x * 500) + 1 <= 500
+	//10 <= {(int)(x * 500) + 1} * 10 <= 5000
+	//10~5000
 	
 	int[] coin = {500,100,50,10};
 	
@@ -73,20 +78,21 @@ public static void main(String[] args) {
 	//Math.random()*45 -> 0.0 <= x < 45.0
 	//Math.random()*45+1 -> 1.0 <= x < 46.0
 	//(int)Math.random()*45+1 -> 1 <= x < 46
-	int rand = ((int)(Math.random()*45) + 1);
+
 	int [] lotto = new int[6];
 	//배열의 길이만큼 반복
-	outer:for(int i = 0; 1  < lotto.length;) {
+	outer:for(int i = 0; i < lotto.length;) {
 		//난수를 하나 뽑아 배열에 저장
-		lotto[i] = (int)(Math.random()*45+1);
+		lotto[i] = (int)(Math.random()*45) + 1;
 		
 		//중복이 있는지 검사
 		for(int j = 0; j < i; j++) {
 			//같은게 있다면
-			if(lotto[i] == lotto[j]);{
+			if(lotto[i] == lotto[j]) {
 				//다시 뽑아야 한다
-				//countinue outer,
+				continue outer;
 			}
+			System.out.print(lotto);
 		}
 	}
 	
