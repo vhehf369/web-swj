@@ -8,7 +8,7 @@ public class CalculatorMain {
 		//클래스명.메서드명();
 		
 		System.out.println(Calculator.pi);
-		Calculator.plus(3, 4);
-		Calculator.minus(24, 4);
+		System.out.println(Calculator.plus(3, 4));
+		System.out.println(Calculator.minus(24, 4));
 	}
 }

@@ -4,13 +4,11 @@ package ex2_enum;
 //요일(월 ~ 일), 계절(봄, 주문상태(주문완료
 //정해진 값들 외에는 아무 문자열이나 들어가서는 안된다.
 public enum Week {
-	MUNDAY,
+	MONDAY,
 	TUESDAY,
-	WEDENSDAY,
+	WEDNESDAY,
 	THURSDAY,
 	FRIDAY,
 	SATURDAY,
 	SUNDAY
-	
-	
 }

@@ -29,13 +29,13 @@ public class WeekExample {
 			today = Week.SUNDAY;
 			break;
 		case 2:
-			today = Week.MUNDAY;
+			today = Week.MONDAY;
 			break;
 		case 3:
 			today = Week.TUESDAY;
 			break;
 		case 4:
-			today = Week.WEDENSDAY;
+			today = Week.WEDNESDAY;
 			break;
 		case 5:
 			today = Week.THURSDAY;

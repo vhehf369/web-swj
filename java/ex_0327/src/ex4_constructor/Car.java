@@ -1,9 +1,9 @@
 package ex4_constructor;
 
 public class Car {
-	String = "현대자동차";
-	String = model;
-	String = color;
+	String company = "현대자동차";
+	String model;
+	String color;
 	int maxSpeed;
 	
 	//기본생성자
