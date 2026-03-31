@@ -1,0 +1,11 @@
+package ex6_sealed;
+
+public class Calculator {
+
+	public int getResult(int n1, int n2) {
+		int n1;
+		int n2;
+		
+		return -1;
+	}
+}
