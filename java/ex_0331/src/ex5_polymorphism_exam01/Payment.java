@@ -7,19 +7,10 @@ public class Payment {
 	}
 }
 
-class CardPayment extends Payment{
-	@Override
-	
-}
-
-class Order {
-	Payment payment;
-	
-	public void proccessPayment(int amount)
-}
-
-public class PayMentMain {
-	public static void main(String[] args) {
-		
-	}
+public class CardPayment extends Payment {
+    
+    @Override
+    public void pay(int amount) {
+        System.out.println("카드로 " + amount + "원을 결제합니다.");
+    }
 }

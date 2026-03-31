@@ -3,7 +3,7 @@ package ex1_overriding;
 public class Main {
 	public static void main(String[] args) {
 		
-		Animal a = new Animal;
+		Animal a = new Animal();
 		a.sound();
 		Dog d = new Dog();
 		d.sound();
