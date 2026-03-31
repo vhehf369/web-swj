@@ -1,7 +1,11 @@
 package ex4_constructor;
 
 public class Car {
+<<<<<<< HEAD
 	String brand = "현대자동차";
+=======
+	String company = "현대자동차";
+>>>>>>> ea559b8c74b4bbdf1ea4c6f0adf6b7e25908eecb
 	String model;
 	String color;
 	int maxSpeed;
